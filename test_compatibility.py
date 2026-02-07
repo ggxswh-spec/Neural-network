@@ -10,7 +10,6 @@ def test_basic_imports():
     """Test that all required modules can be imported."""
     print("Testing imports...")
     try:
-        import numpy as np
         print(f"✓ NumPy {np.__version__} imported successfully")
         
         from CNN import Conv2D, ReLU, MaxPool2d, Flatten, Dense, Softmax, SimpleCNN

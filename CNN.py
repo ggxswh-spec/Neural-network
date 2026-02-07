@@ -295,15 +295,15 @@ def train(model,x_train,y_train,x_val=None,y_val=None,epochs=3,batchsize=64,lr=0
 
 
 if __name__ == "__main__":
-    x_train,y_train = load_csv_data('fashion-mnist_train.csv')
-    x_test,y_test = load_csv_data('fashion-mnist_test.csv')
+    x_train, y_train = load_csv_data('fashion-mnist_train.csv')
+    x_test, y_test = load_csv_data('fashion-mnist_test.csv')
 
     np.random.seed(42)
     model = SimpleCNN()
 
-    train(model,x_train[:1000],y_train[:1000])
+    train(model, x_train[:1000], y_train[:1000])
 
-    print(evaluate(model,x_test[:1000],y_test[:1000]))
+    print(evaluate(model, x_test[:1000], y_test[:1000]))
 
 
 
